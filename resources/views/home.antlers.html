@@ -1,0 +1,7 @@
+<article class="mt-4 bg-white p-8 shadow-xl rounded-xl max-w-xl prose">
+    {{ content | widont }}
+</article>
+{{ blocks }}
+{{ version = version ?? 'default' }}
+{{ partial src="sections/{type}/{version}" }}
+{{  /blocks }}

@@ -1,0 +1,12 @@
+default:
+  name: us
+  url: '{{ config:app:url }}'
+  locale: en_US
+cn:
+  name: cn
+  url: '{{ config:app:url }}/cn/'
+  locale: zh_CN
+jp:
+  name: jp
+  url: '{{ config:app:url }}/jp/'
+  locale: ja_JP

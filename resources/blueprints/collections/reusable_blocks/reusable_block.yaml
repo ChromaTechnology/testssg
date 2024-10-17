@@ -1,0 +1,60 @@
+title: reusable_block
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              remove_empty_nodes: true
+              type: bard
+              display: content
+              localizable: true
+              buttons:
+                - h2
+                - h3
+                - h4
+                - h5
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              sets:
+                button:
+                  display: button
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: try
+                          field:
+                            type: text
+                            display: try
+                            localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

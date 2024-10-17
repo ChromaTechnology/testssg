@@ -1,0 +1,18 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: blocks
+    field:
+      collapse: accordion
+      type: replicator
+      display: Blocks
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            global_blocks:
+              display: 'Global Blocks'
+              fields:
+                -
+                  import: global_blocks

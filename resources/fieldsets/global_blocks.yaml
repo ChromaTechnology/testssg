@@ -1,0 +1,27 @@
+title: global_blocks
+fields:
+  -
+    handle: global_block_selector
+    field:
+      type: grid
+      display: 'Global Blocks'
+      localizable: false
+      fields:
+        -
+          handle: reusable_block
+          field:
+            max_items: 1
+            mode: select
+            collections:
+              - reusable_blocks
+            type: entries
+            display: Block
+            localizable: false
+            width: 75
+        -
+          handle: block_active
+          field:
+            type: toggle
+            display: 'Block Active'
+            localizable: false
+            width: 25

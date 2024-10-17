@@ -1,0 +1,11 @@
+{{ global_block_selector }}
+    {{ if block_active }}
+        {{ partial:components.ui._section }}
+            {{ reusable_block }}
+                {{ content }}
+                    {{ partial:pages.bard.{type} }}
+                {{ /content }}
+            {{ /reusable_block }}
+        {{ /partial:components.ui._section }}
+    {{ /if }}
+{{ /global_block_selector }}
